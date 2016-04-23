@@ -8,7 +8,7 @@ import (
 
 func main() {
 	http.HandleFunc("/", handler) // each request calls handler
-	log.Fatal(http.ListenAndServe("localhost:80", nil))
+	log.Fatal(http.ListenAndServe("0.0.0.0:80", nil))
 }
 
 // handler echoes the Path component of the request URL r.
